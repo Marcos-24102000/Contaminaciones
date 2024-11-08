@@ -1,0 +1,233 @@
+  /* body {
+            background-color: #e9f7ef;
+        } */
+        .roboto-mono-uniquifier {
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight:bolder;
+            font-style: normal;
+          }
+                  section {
+                      background-image: url('https://wallpapercat.com/w/full/1/5/b/1239183-3840x2160-desktop-4k-green-forest-background-photo.jpg');
+                      background-size: cover;
+                      background-attachment: local;
+                      color: white;
+                      padding: 20px 0;
+                      text-align: center;
+                  }
+                  .card {
+                      margin: 20px 0;
+                  }
+                  /* .footer {
+                      background-color: #2ecc71;
+                      color: white;
+                      text-align: center;
+                      padding: 10px 0;
+                  } */
+                  .more-text {
+                      display: none;
+                  }
+          
+              .imagen {
+                  width: 100px;
+              }
+          
+              .iconos {
+                  width: 50px;
+              }
+              @media(max-width:500px) {
+              nav {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+              }
+          
+              ul li {
+                  display: inline-block;
+              }
+          
+              .logo {
+                  max-width: 100px;
+              }
+          }
+          
+          @media(min-width:501px) {
+              nav {
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+              }
+          
+              ul li {
+                  display: inline-block;
+              }
+          
+              .logo {
+                  max-width: 100px;
+              }
+          }
+          
+          @media(min-width:900px) {
+              nav {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+              }
+          
+              ul li {
+                  display: inline-block;
+              }
+          
+              .logo {
+                  max-width: 100px;
+              }
+          }
+          button {
+              border: none;
+              color: #fff;
+              background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+              border-radius: 20px;
+              background-size: 100% auto;
+              font-family: inherit;
+              font-size: 17px;
+              padding: 0.3em 1.0em;
+              margin-right: 10px;
+              margin-top: 10px;
+             }
+             
+             button:hover {
+              background-position: right center;
+              background-size: 200% auto;
+              -webkit-animation: pulse 2s infinite;
+              animation: pulse512 1.5s infinite;
+             }
+             
+             @keyframes pulse512 {
+              0% {
+               box-shadow: 0 0 0 0 #05bada66;
+              }
+             
+              70% {
+               box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+              }
+             
+              100% {
+               box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+              }
+             }
+             a{
+              text-decoration: none;
+              color: #4ce3f7;
+             }
+             a:hover{
+              text-decoration: underline;
+             }
+             .centrar{
+              display: flex;
+              justify-content: center;
+             }
+             body{
+              background-image: url('https://images.wallpaperscraft.com/image/single/lighthouse_rock_cliff_1328305_3840x2400.jpg');
+              background-size: cover;
+              background-attachment: fixed;
+              backdrop-filter: blur(2px);
+             
+          }
+          .espacio{
+              padding-bottom: 30%;
+          }
+
+
+          /*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  /*the animation definition*/
+  @-webkit-keyframes hinge {
+    0% {
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out
+    }
+    20%,
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 80deg);
+      transform: rotate3d(0, 0, 1, 80deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out
+    }
+    40%,
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, 60deg);
+      transform: rotate3d(0, 0, 1, 60deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      opacity: 1
+    }
+    100% {
+      -webkit-transform: translate3d(0, 700px, 0);
+      transform: translate3d(0, 700px, 0);
+      opacity: 0
+    }
+  }
+  @keyframes hinge {
+    0% {
+      -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out
+    }
+    20%,
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 80deg);
+      -ms-transform: rotate3d(0, 0, 1, 80deg);
+      transform: rotate3d(0, 0, 1, 80deg);
+      -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out
+    }
+    40%,
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, 60deg);
+      -ms-transform: rotate3d(0, 0, 1, 60deg);
+      transform: rotate3d(0, 0, 1, 60deg);
+      -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      opacity: 1
+    }
+    100% {
+      -webkit-transform: translate3d(0, 700px, 0);
+      -ms-transform: translate3d(0, 700px, 0);
+      transform: translate3d(0, 700px, 0);
+      opacity: 0
+    }
+  }
+  .hinge:hover {
+    -webkit-animation-name: hinge;
+    animation-name: hinge
+  }
+  
+

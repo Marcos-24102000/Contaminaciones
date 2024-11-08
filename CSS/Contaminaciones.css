@@ -1,0 +1,121 @@
+section {
+    background-image: url('https://wallpapercat.com/w/full/1/5/b/1239183-3840x2160-desktop-4k-green-forest-background-photo.jpg');
+    background-size: cover;
+    background-attachment: local;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.card {
+    margin: 20px 0;
+}
+
+
+.more-text {
+    display: none;
+}
+
+.imagen {
+    width: 100px;
+}
+
+.iconos {
+    width: 50px;
+}
+
+@media(max-width:500px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+@media(min-width:501px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+@media(min-width:900px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.3em 1.0em;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #4ce3f7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}

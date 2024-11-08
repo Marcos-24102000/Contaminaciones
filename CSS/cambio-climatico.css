@@ -1,0 +1,176 @@
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.quiz-image {
+    display: none;
+    /* Ocultar imágenes por defecto */
+    max-width: 100%;
+    /* Asegurar que la imagen no sobrepase el contenedor */
+}
+
+.quiz-image {
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+dl {
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    background-color: #198754;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+body{
+    color: white;
+}
+h1,h2,h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    color: white;
+    font-size: large;
+}
+@media(max-width:500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+@media(min-width:501px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+@media(min-width:900px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    dt dl {
+        display: inline-block;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.3em 1.0em;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+.centrar{
+display: flex;
+justify-content: center;
+}
+a{
+text-decoration: none;
+color: #4ce3f7;
+}
+a:hover{
+text-decoration: underline;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+.imagen{
+    view-timeline-name: --image;
+    view-timeline-axis: block ;
+
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 70%;
+    animation-fill-mode: both;
+}
+.like-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 7px;
+        background-color: #eee;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .liked {
+        color: #e0245e; /* Color del botón cuando está marcado */
+    }
+    .like-count {
+        margin-left: 8px;
+        font-weight: bold;
+    }
+    p{
+        text-align: justify;
+    }
